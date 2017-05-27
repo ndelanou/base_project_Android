@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Base Project</string>
+    <string name="requires_internet_message">Cette fonctionnalité nécessite une connexion Internet</string>
+</resources>

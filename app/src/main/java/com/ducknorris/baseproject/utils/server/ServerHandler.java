@@ -1,4 +1,4 @@
-package base.ducknorris.com.baseproject.utils.server;
+package com.ducknorris.baseproject.utils.server;
 
 import com.franmontiel.persistentcookiejar.PersistentCookieJar;
 import com.franmontiel.persistentcookiejar.cache.SetCookieCache;
@@ -16,7 +16,7 @@ import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.concurrent.TimeUnit;
 
-import base.ducknorris.com.baseproject.BaseApplication;
+import com.ducknorris.baseproject.BaseApplication;
 import okhttp3.CacheControl;
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -42,7 +42,7 @@ public class ServerHandler {
     private OkHttpClient mClient = null;
 
     private ServerHandler() {
-        CookieJar cookieJar = new PersistentCookieJar(new SetCookieCache(), new SharedPrefsCookiePersistor(BaseApplication.INSTANCE.getApplicationContext()));
+        CookieJar cookieJar = new PersistentCookieJar(new SetCookieCache(), new SharedPrefsCookiePersistor(BaseApplication.Companion.getINSTANCE().getApplicationContext()));
         CookieManager cookieManager = new CookieManager();
         cookieManager.setCookiePolicy(CookiePolicy.ACCEPT_ALL);
 

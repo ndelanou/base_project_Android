@@ -1,4 +1,4 @@
-package base.ducknorris.com.baseproject.utils;
+package com.ducknorris.baseproject.utils;
 
 import com.squareup.otto.Bus;
 import com.squareup.otto.ThreadEnforcer;

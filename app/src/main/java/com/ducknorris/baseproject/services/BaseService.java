@@ -1,6 +1,6 @@
-package base.ducknorris.com.baseproject.services;
+package com.ducknorris.baseproject.services;
 
-import base.ducknorris.com.baseproject.utils.RetrofitManager;
+import com.ducknorris.baseproject.utils.RetrofitManager;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;

@@ -1,4 +1,4 @@
-package base.ducknorris.com.baseproject.utils.preference;
+package com.ducknorris.baseproject.utils.preference;
 
 /**
  * Created by ndelanou on 17/05/2017.

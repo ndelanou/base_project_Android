@@ -1,4 +1,4 @@
-package base.ducknorris.com.baseproject.utils.server;
+package com.ducknorris.baseproject.utils.server;
 
 /**
  * Created by ndelanou on 17/05/2017.

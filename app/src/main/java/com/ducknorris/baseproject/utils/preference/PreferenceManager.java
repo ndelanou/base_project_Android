@@ -1,8 +1,8 @@
-package base.ducknorris.com.baseproject.utils.preference;
+package com.ducknorris.baseproject.utils.preference;
 
 import android.content.SharedPreferences;
 
-import base.ducknorris.com.baseproject.BaseApplication;
+import com.ducknorris.baseproject.BaseApplication;
 
 /**
  * Created by ndelanou on 17/05/2017.
@@ -17,7 +17,7 @@ public class PreferenceManager {
     private SharedPreferences getPreferences() {
         if (mSharedPreferences == null) {
             mSharedPreferences = android.preference.PreferenceManager
-                    .getDefaultSharedPreferences(BaseApplication.INSTANCE.getApplicationContext());
+                    .getDefaultSharedPreferences(BaseApplication.Companion.getINSTANCE().getApplicationContext());
         }
         return mSharedPreferences;
     }

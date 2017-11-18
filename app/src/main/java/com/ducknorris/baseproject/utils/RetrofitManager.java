@@ -1,6 +1,6 @@
-package base.ducknorris.com.baseproject.utils;
+package com.ducknorris.baseproject.utils;
 
-import base.ducknorris.com.baseproject.utils.server.ServerHandler;
+import com.ducknorris.baseproject.utils.server.ServerHandler;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 

@@ -1,12 +1,14 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.1'
     defaultConfig {
-        applicationId "base.ducknorris.com.baseproject"
-        minSdkVersion 16
-        targetSdkVersion 25
+        applicationId "com.ducknorris.baseproject"
+        minSdkVersion 18
+        targetSdkVersion 27
         versionCode 1
         versionName "0.0"
     }
@@ -22,13 +24,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     // Support
-    compile 'com.android.support:appcompat-v7:25.3.1'
-
-    // Google
-
-    // Butterknife
-    compile 'com.jakewharton:butterknife:8.6.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    compile 'com.android.support:appcompat-v7:27.0.1'
 
     // Square
     compile 'com.squareup.okio:okio:1.13.0'
@@ -49,4 +45,8 @@ dependencies {
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
     compile 'org.jsoup:jsoup:1.10.2'
     compile 'me.grantland:autofittextview:0.2.1'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }

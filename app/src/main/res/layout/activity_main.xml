@@ -6,14 +6,14 @@
     android:gravity="center" >
 
     <TextView
-        android:id="@+id/hello"
+        android:id="@+id/hello_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <ImageView
-        android:id="@+id/image"
+        android:id="@+id/image_iv"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop" />
 
 </LinearLayout>

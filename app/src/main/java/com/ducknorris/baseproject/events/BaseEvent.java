@@ -1,4 +1,4 @@
-package base.ducknorris.com.baseproject.events;
+package com.ducknorris.baseproject.events;
 
 /**
  * Created by DuckN on 20/05/2017.

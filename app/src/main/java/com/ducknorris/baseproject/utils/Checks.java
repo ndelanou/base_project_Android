@@ -1,4 +1,4 @@
-package base.ducknorris.com.baseproject.utils;
+package com.ducknorris.baseproject.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,8 +6,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.widget.Toast;
 
-import base.ducknorris.com.baseproject.BaseApplication;
-import base.ducknorris.com.baseproject.R;
+import com.ducknorris.baseproject.BaseApplication;
+import com.ducknorris.baseproject.R;
 
 
 /**
@@ -23,7 +23,7 @@ public class Checks {
     }
 
     private static boolean hasInternet(boolean showToast, Activity context, int messageID) {
-        ConnectivityManager cm = (ConnectivityManager) BaseApplication.INSTANCE.getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager cm = (ConnectivityManager) BaseApplication.Companion.getINSTANCE().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetworkInfo = cm.getActiveNetworkInfo();
         boolean isOnline = activeNetworkInfo != null;
         if (isOnline) {

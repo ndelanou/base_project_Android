@@ -1,4 +1,4 @@
-package base.ducknorris.com.baseproject.utils.server;
+package com.ducknorris.baseproject.utils.server;
 
 
 import org.json.JSONObject;

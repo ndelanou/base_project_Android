@@ -1,4 +1,4 @@
-package base.ducknorris.com.baseproject.utils;
+package com.ducknorris.baseproject.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
